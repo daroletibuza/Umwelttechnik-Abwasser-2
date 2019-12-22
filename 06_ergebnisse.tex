@@ -39,6 +39,8 @@ Im folgenden Protokollabschnitt werden die Versuchsergebnisse der Versuchsdurchf
 \FloatBarrier
 % pgf diagramm3 ENDE
 
+\vspace*{10mm}
+
 % pgf diagramm3 START
 \begin{figure}[h!]
 	\begin{center}
@@ -57,7 +59,7 @@ Im folgenden Protokollabschnitt werden die Versuchsergebnisse der Versuchsdurchf
 		ylabel={Absetzvolumen in $\si{\milli \liter}$},
 	%	y label style={at={(-0.03,0.5)}},
 		xlabel={Zeit in min},
-		legend style={at={(0.7,1)},anchor=west}
+		legend style={at={(0.5,0.95)},anchor=west}
 		]
 		
 		\addplot[black,mark=*,text mark as node=true,point meta=explicit symbolic,nodes near coords, dashed]
@@ -81,11 +83,11 @@ Im folgenden Protokollabschnitt werden die Versuchsergebnisse der Versuchsdurchf
 \FloatBarrier
 % pgf diagramm3 ENDE
 
+\newpage
 
 \section*{Absetzvolumen}
 
 %Tabelle START
-
 \vspace*{-2.5mm}
 \renewcommand{\arraystretch}{1.2}
 \begin{table}[h!]
@@ -147,15 +149,68 @@ Im folgenden Protokollabschnitt werden die Versuchsergebnisse der Versuchsdurchf
 %Tabelle Ende
 
 
-
-
 \section*{organische Trockensubstanz oTS}
+%Tabelle START
+
+\vspace*{-2.5mm}
+\renewcommand{\arraystretch}{1.2}
+\begin{table}[h!]
+	%	\begin{adjustwidth}{-2cm}{-2cm} 
+	%	\begin{center}
+	\centering
+	\caption{Messwerte für organische Trockensubstanz}
+	\label{tab:ots}
+	%	\resizebox{19cm}{!}{
+	\begin{tabulary}{1.7\textwidth}{L|C|CCC}
+		\hline
+		& \textbf{Maßeinheit}&	\textbf{Probe 1} & \textbf{Probe 2} & \textbf{Probe 3}  \\ 
+		\hline
+		\textbf{Probenvolumen}& $\boldsymbol{\left[\si{\milli \liter}\right]}$ & 94 	& 300 	& 100\\
+		\textbf{Masse Tiegel (leer)} &  $\boldsymbol{\left[\si{\gram}\right]}$ & 33,2023 & 31,0858 & 34,0671\\
+		\textbf{Masse Tiegel (voll)}& $\boldsymbol{\left[\si{\gram}\right]}$	& 33,2209 & 31,1029 & 34,0713\\
+		\hline
+		\textbf{Masse oTS} & $\boldsymbol{\left[\si{\milli \gram}\right]}$& 18,6 & 17,1 & 4,2\\
+		\hline
+		\textbf{Konzentration oTS}&$\boldsymbol{\left[\si{\milli \gram \per \liter}\right]}$& 198 & 57 & 42 \\
+		\hline
+	\end{tabulary}
+	%	}
+	%	\end{center}
+	%	\end{adjustwidth}
+\end{table}
+\FloatBarrier
+\vspace*{-2.5mm}
+%Tabelle Ende
 
 
 \section{chemischer Sauerstoffbedarf CSB}
 Verdünnung Probe 1 mit 1:1\\
 Messbereich 0-1500 ml/l\\
 2ml derr Analyselösung in Reagenz mit Schwefelzeug gegeben
+
+%Tabelle START
+\vspace*{-2.5mm}
+\renewcommand{\arraystretch}{1.2}
+\begin{table}[h!]
+	%	\begin{adjustwidth}{-2cm}{-2cm} 
+	%	\begin{center}
+	\centering
+	\caption{Messwerte für den chemischen Sauerstoffbedarf}
+	\label{tab:csb}
+	%	\resizebox{19cm}{!}{
+	\begin{tabulary}{1.7\textwidth}{L|CC|C|C}
+		\hline
+		& \textbf{Probe 1 (verdünnt) $\boldsymbol{\left[\si{\milli \gram \per \liter}\right]}$}  &\textbf{Probe 1 $\boldsymbol{\left[\si{\milli \gram \per \liter}\right]}$}& \textbf{Probe 2 $\boldsymbol{\left[\si{\milli \gram \per \liter}\right]}$} & \textbf{Probe 3 $\boldsymbol{\left[\si{\milli \gram \per \liter}\right]}$}  \\ 
+		\hline
+		\textbf{$\boldsymbol{CSB}$}& 575 & 1150 & 486 & 221 \\
+		\hline
+	\end{tabulary}
+	%	}
+	%	\end{center}
+	%	\end{adjustwidth}
+\end{table}
+\FloatBarrier
+\vspace*{-2.5mm}
 
 \section[biologischer Sauerstoffbedarf BSB$_5$]{biologischer Sauerstoffbedarf BSB$\boldsymbol{_5}$}
 Plätze 4,5,6 belegt\\
@@ -180,9 +235,9 @@ Die Referenzwerte der Mindestanforderungen für das Einleiten kommunaler Abwäss
 		\hline
 		\textbf{Grenzwert} & \textbf{75} & \textbf{15}  \\
 		\hline
-		Probe 1 &  &  \\
-		Probe 2 &  &  \\
-		Probe 3 &  &  \\
+		Probe 1 & 575 &  \\
+		Probe 2 & 486 &  \\
+		Probe 3 & 221 &  \\
 		\hline
 	\end{tabulary}
 	%}
@@ -198,7 +253,7 @@ Die Referenzwerte der Mindestanforderungen für das Einleiten kommunaler Abwäss
 	width=15cm,
 	height=7cm,
 	%minor y tick num=4,
-	xmax=90,xmin=0,
+	xmax=600,xmin=0,
 	x tick label style={/pgf/number format/.cd,%
 		scaled x ticks = false,
 		set decimal separator={,},
@@ -207,7 +262,7 @@ Die Referenzwerte der Mindestanforderungen für das Einleiten kommunaler Abwäss
 	ytick=data,
 	%legend style={at={(0.5,-0.15)},
 	%	anchor=north,legend columns=-1},
-	xtick={0,10,...,90},
+	xtick={0,50,...,600},
 	grid=major,
 	xlabel=Gehalt in  \si{\milli\gram\per\liter},
 	%enlargelimits=0.15,
@@ -215,7 +270,7 @@ Die Referenzwerte der Mindestanforderungen für das Einleiten kommunaler Abwäss
 	]
 	%CSB
 	\addplot[fill=black] coordinates {
-		(0,Probe 1) (1.3,Probe 2) (0.6,Probe 3) (75,max. für GK 5)
+		(575,Probe 1) (486,Probe 2) (221,Probe 3) (75,max. für GK 5)
 	};
 	%BSB5
 	\addplot coordinates {
@@ -354,8 +409,10 @@ Um die Messwerte des Versuches mit häuslichem Abwasser gegenüberzustellen wird
 	height=6.7cm,
 	symbolic x coords={0,Probe 1, Probe 2,Probe 3,2,1},
 	]
-	\addplot[fill=gray!50,draw=black!60] coordinates {(Probe 1,0) (Probe 2,3.9) (Probe 3,8.8)
+	%Daten der Proben
+	\addplot[fill=gray!50,draw=black!60] coordinates {(Probe 1,575) (Probe 2,186) (Probe 3,221)
 	};
+	%Grenzen
 	\addplot[green!50!black,sharp plot,update limits=false, dashed] 
 	coordinates {(0,300) (1,300)} 
 	node[above] at (axis cs:Probe 2,300) {geringe Belastung
