@@ -114,9 +114,18 @@ Im folgenden Protokollabschnitt werden die Versuchsergebnisse der Versuchsdurchf
 %Tabelle Ende
 
 \section{Trockensubstanz TS}
+Beispielrechnung für Probe 1
+\begin{flalign}
+	m_{\text{Filterkuchen}}		&= m_{\text{Filterkuchen+Filter}}-m_{\text{Filter (trocken)}}\\
+	m_{\text{Filterkuchen,1}}	&= \SI{0,611}{\gram}-\SI{0,487}{\gram}\\
+								&=\underline{ \SI{0,124}{\gram}}\\[8pt]
+	c_{\text{filtrierbar}} 		&= \frac{m_{\text{Filterkuchen}}}{V_{\text{Probe}}}\\[2mm]
+	c_{\text{filtrierbar,1}} 	&= \frac{m_{\text{Filterkuchen,1}}}{V_{\text{Probe 1}}}\\[2mm]
+								&= \frac{\SI{0,124}{\gram}}{\SI{94}{\milli \liter}}\\
+								&= \SI{0.0013191489}{\gram\per \milli \liter} \approx \underline{\underline{\SI{1319}{\milli \gram \per \liter}}}
+\end{flalign}
 
 %Tabelle START
-
 \vspace*{-2.5mm}
 \renewcommand{\arraystretch}{1.2}
 \begin{table}[h!]
@@ -148,10 +157,20 @@ Im folgenden Protokollabschnitt werden die Versuchsergebnisse der Versuchsdurchf
 
 %Tabelle Ende
 
+\newpage
 
 \section*{organische Trockensubstanz oTS}
-%Tabelle START
+Beispielrechnung für Probe 1
+\begin{flalign}
+m_{\text{oTS}}				&= m_{\text{Tiegel+Probe}}-m_{\text{Tiegel}}\\
+m_{\text{oTS,1}}			&= \SI{33,2209}{\gram}-\SI{33,2023}{\gram}\\
+							&= \underline{ \SI{0,0186}{\gram}}\\[8pt]
+c_{\text{oTS}} 				&= \frac{m_{\text{oTS}}}{V_{\text{Probe}}}\\[2mm]
+c_{\text{oTS,1}} 			&= \frac{\SI{0,0186}{\gram}}{\SI{94}{\milli \liter}}\\
+							&= \SI{0.000198}{\gram\per \milli \liter} \approx \underline{\underline{\SI{198}{\milli \gram \per \liter}}}
+\end{flalign}
 
+%Tabelle START
 \vspace*{-2.5mm}
 \renewcommand{\arraystretch}{1.2}
 \begin{table}[h!]
@@ -182,12 +201,16 @@ Im folgenden Protokollabschnitt werden die Versuchsergebnisse der Versuchsdurchf
 \vspace*{-2.5mm}
 %Tabelle Ende
 
+\section{Schlammvolumenindex SVI}
+Quelle Römpp \cite{Dr.ManfredNeupert.August2008}\\
 
-\section{chemischer Sauerstoffbedarf CSB}
-Verdünnung Probe 1 mit 1:1\\
-Messbereich 0-1500 ml/l\\
-2ml derr Analyselösung in Reagenz mit Schwefelzeug gegeben
-
+Beispielrechnung für Probe 1
+\begin{flalign}
+	SVI		&= \frac{\varphi_{\text{Absetzvolumen nach 30 min}}}{c_{\text{filtrierbar}}}\\
+	SVI_1	&= \frac{\varphi_{\text{Absetzvolumen nach 30 min},1}}{c_{\text{filtrierbar},1}}\\
+			&= \frac{\SI{210}{\milli \liter \per \liter}}{\SI{1319}{\milli \gram \per \liter}}\\
+			&= \SI{0.1592}{\milli \liter \per \milli \gram} = \underline{\underline{\SI{159,2}{\milli \liter \per \gram}}}
+\end{flalign}
 %Tabelle START
 \vspace*{-2.5mm}
 \renewcommand{\arraystretch}{1.2}
@@ -195,7 +218,43 @@ Messbereich 0-1500 ml/l\\
 	%	\begin{adjustwidth}{-2cm}{-2cm} 
 	%	\begin{center}
 	\centering
-	\caption{Messwerte für den chemischen Sauerstoffbedarf}
+	\caption{SVI für die Abwasserproben 1 bis 3}
+	\label{tab:svi}
+	%	\resizebox{19cm}{!}{
+	\begin{tabulary}{1.7\textwidth}{L|C|C|C}
+		\hline
+		& \textbf{Probe 1 $\boldsymbol{\left[\si{\milli \liter \per \gram}\right]}$}& \textbf{Probe 2 $\boldsymbol{\left[\si{\milli \liter \per \gram}\right]}$} & \textbf{Probe 3 $\boldsymbol{\left[\si{\milli \liter \per \gram}\right]}$}  \\ 
+		\hline
+		\textbf{$\boldsymbol{SVI}$}& 159,2 & 9,5 & 44,4 \\
+		\hline
+	\end{tabulary}
+	%	}
+	%	\end{center}
+	%	\end{adjustwidth}
+\end{table}
+\FloatBarrier
+\textcolor{red}{Werte für Probe 2 und Probe 3 sinnlos, das gar kein richtiger Schlamm mehr vorhanden ist}
+
+\section{chemischer Sauerstoffbedarf CSB}
+Verdünnung Probe 1 mit 1:1\\
+Messbereich 0-1500 ml/l\\
+2ml derr Analyselösung in Reagenz mit Schwefelzeug gegeben \\
+
+Berechnung CSB für Probe 1 aus 1:1 verdünnter Lösung, sprich Hälfte Probe Hälfte Wasser
+\begin{flalign}
+\frac{c_{\text{Probe 1}}}{c_{\text{Probe 1 (verdünnt)}}}  	&= \frac{2}{1} \\
+c_{\text{Probe 1}}											&= 2*c_{\text{Probe 1 (verdünnt)}}\\
+															&= 2*\SI{575}{\milli \gram \per \liter} \\
+															&= \underline{\underline{\SI{1150}{\milli \gram \per \liter}}}
+\end{flalign}
+%Tabelle START
+\vspace*{-8.5mm}
+\renewcommand{\arraystretch}{1.2}
+\begin{table}[h!]
+	%	\begin{adjustwidth}{-2cm}{-2cm} 
+	%	\begin{center}
+	\centering
+	\caption{Messwerte für den chemischen Sauerstoffbedarf für die Abwasserproben 1 bis 3}
 	\label{tab:csb}
 	%	\resizebox{19cm}{!}{
 	\begin{tabulary}{1.7\textwidth}{L|CC|C|C}
@@ -210,12 +269,36 @@ Messbereich 0-1500 ml/l\\
 	%	\end{adjustwidth}
 \end{table}
 \FloatBarrier
+
 \vspace*{-2.5mm}
 
 \section[biologischer Sauerstoffbedarf BSB$_5$]{biologischer Sauerstoffbedarf BSB$\boldsymbol{_5}$}
 Plätze 4,5,6 belegt\\
 Messbereich für Probe 1 und 2 = 0-700 mg/L mit 95ml\\
 Messbereich für Probe 3 = 0-350 mg/L mit 160ml
+
+%Tabelle START
+\vspace*{-2.5mm}
+\renewcommand{\arraystretch}{1.2}
+\begin{table}[h!]
+	%	\begin{adjustwidth}{-2cm}{-2cm} 
+	%	\begin{center}
+	\centering
+	\caption{Messwerte für den biologischen Sauerstoffbedarf über 5 Tage für die Abwasserproben 1 bis 3}
+	\label{tab:csb}
+	%	\resizebox{19cm}{!}{
+	\begin{tabulary}{1.7\textwidth}{L|C|C|C}
+		\hline
+		& \textbf{Probe 1 $\boldsymbol{\left[\si{\milli \gram \per \liter}\right]}$}& \textbf{Probe 2 $\boldsymbol{\left[\si{\milli \gram \per \liter}\right]}$} & \textbf{Probe 3 $\boldsymbol{\left[\si{\milli \gram \per \liter}\right]}$}  \\ 
+		\hline
+		\textbf{$\boldsymbol{BSB_5}$}& 254 & 252 & 50 \\
+		\hline
+	\end{tabulary}
+	%	}
+	%	\end{center}
+	%	\end{adjustwidth}
+\end{table}
+\FloatBarrier
 
 
 \newpage
@@ -235,9 +318,9 @@ Die Referenzwerte der Mindestanforderungen für das Einleiten kommunaler Abwäss
 		\hline
 		\textbf{Grenzwert} & \textbf{75} & \textbf{15}  \\
 		\hline
-		Probe 1 & 575 &  \\
-		Probe 2 & 486 &  \\
-		Probe 3 & 221 &  \\
+		Probe 1 & 575 & 254 \\
+		Probe 2 & 486 & 252\\
+		Probe 3 & 221 & 50\\
 		\hline
 	\end{tabulary}
 	%}
@@ -274,7 +357,7 @@ Die Referenzwerte der Mindestanforderungen für das Einleiten kommunaler Abwäss
 	};
 	%BSB5
 	\addplot coordinates {
-		(50,Probe 1) (0.77,Probe 2) (2.18,Probe 3) (15,max. für GK 5)
+		(254,Probe 1) (252,Probe 2) (50,Probe 3) (15,max. für GK 5)
 	};
 
 	\legend{$CSB$,$BSB_5$}
@@ -450,19 +533,21 @@ Um die Messwerte des Versuches mit häuslichem Abwasser gegenüberzustellen wird
 	height=6.7cm,
 	symbolic x coords={0,Probe 1, Probe 2,Probe 3,2,1},
 	]
-	\addplot[fill=gray!50,draw=black!60] coordinates {(Probe 1,0) (Probe 2,3.9) (Probe 3,8.8)
+	%Daten
+	\addplot[fill=gray!50,draw=black!60] coordinates {(Probe 1,254) (Probe 2,252) (Probe 3,50)
 	};
+	%Linien
 	\addplot[green!50!black,sharp plot,update limits=false, dashed] 
 	coordinates {(0,150) (1,150)} 
-	node[above] at (axis cs:Probe 2,150) {geringe Belastung
+	node[above] at (axis cs:Probe 2,150) {\hspace*{5cm} geringe Belastung
 	};
 	\addplot[orange,sharp plot,update limits=false, dashed] 
 	coordinates {(0,300) (1,300)} 
-	node[above] at (axis cs:Probe 2,300) {mittelere Belastung
+	node[above] at (axis cs:Probe 2,300) {\hspace*{5cm} mittelere Belastung
 	};
 	\addplot[red,sharp plot,update limits=false, dashed] 
 	coordinates {(0,500) (1,500)} 
-	node[above] at (axis cs:Probe 2,500) {starke Belastung
+	node[above] at (axis cs:Probe 2,500) {\hspace*{5cm} starke Belastung
 	};
 	\legend{BSB$_5$}
 	\end{axis}

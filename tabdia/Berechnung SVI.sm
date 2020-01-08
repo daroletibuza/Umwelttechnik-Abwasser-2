@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.7251.32800"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>159abf31-222b-416b-8573-3d454687b657</id>
+      <revision>2</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.7251.32800" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Math Region" version="0.99.7251.32800" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="81" top="9" width="101" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">m.1</e>
+          <e type="operand">1319</e>
+          <e type="operand" style="unit">mg</e>
+          <e type="operand" style="unit">L</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="315" top="9" width="93" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">m.2</e>
+          <e type="operand">210</e>
+          <e type="operand" style="unit">mg</e>
+          <e type="operand" style="unit">L</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="531" top="9" width="85" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">m.3</e>
+          <e type="operand">90</e>
+          <e type="operand" style="unit">mg</e>
+          <e type="operand" style="unit">L</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="81" top="45" width="93" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.1</e>
+          <e type="operand">210</e>
+          <e type="operand" style="unit">ml</e>
+          <e type="operand" style="unit">L</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="315" top="45" width="77" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.2</e>
+          <e type="operand">2</e>
+          <e type="operand" style="unit">ml</e>
+          <e type="operand" style="unit">L</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="531" top="45" width="77" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.3</e>
+          <e type="operand">4</e>
+          <e type="operand" style="unit">ml</e>
+          <e type="operand" style="unit">L</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="81" top="117" width="164" height="53" color="#000000" fontSize="10">
+      <math significantDigitsMode="true" trailingZeros="true">
+        <input>
+          <e type="operand">I.SV.1</e>
+          <e type="operand">V.1</e>
+          <e type="operand">m.1</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">ml</e>
+          <e type="operand" style="unit">g</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">159.2</e>
+        </result>
+      </math>
+    </region>
+    <region left="315" top="117" width="164" height="53" color="#000000" fontSize="10">
+      <math significantDigitsMode="true" trailingZeros="true">
+        <input>
+          <e type="operand">I.SV.2</e>
+          <e type="operand">V.2</e>
+          <e type="operand">m.2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">ml</e>
+          <e type="operand" style="unit">g</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">9.524</e>
+        </result>
+      </math>
+    </region>
+    <region left="531" top="117" width="164" height="53" color="#000000" fontSize="10">
+      <math significantDigitsMode="true" trailingZeros="true">
+        <input>
+          <e type="operand">I.SV.3</e>
+          <e type="operand">V.3</e>
+          <e type="operand">m.3</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">ml</e>
+          <e type="operand" style="unit">g</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">44.44</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>
