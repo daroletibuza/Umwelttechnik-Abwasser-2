@@ -122,7 +122,7 @@ Beispielrechnung für Probe 1
 	c_{\text{filtrierbar}} 		&= \frac{m_{\text{Filterkuchen}}}{V_{\text{Probe}}}\\[2mm]
 	c_{\text{filtrierbar,1}} 	&= \frac{m_{\text{Filterkuchen,1}}}{V_{\text{Probe 1}}}\\[2mm]
 								&= \frac{\SI{0,124}{\gram}}{\SI{94}{\milli \liter}}\\
-								&= \SI{0.0013191489}{\gram\per \milli \liter} \approx \underline{\underline{\SI{1319}{\milli \gram \per \liter}}}
+								&= \SI{0.0013191489}{\gram\per \milli \liter} \approx \underline{\underline{\SI{1,32}{ \gram \per \liter}}}
 \end{flalign}
 
 %Tabelle START
@@ -145,7 +145,7 @@ Beispielrechnung für Probe 1
 		\hline
 		\textbf{Masse Filterkuchen} & $\boldsymbol{\left[\si{\gram}\right]}$& 0,124 &0,063&0,009\\
 		\hline
-		\textbf{Konzentration abfiltrierbare Stoffe}&$\boldsymbol{\left[\si{\milli \gram \per \liter}\right]}$&1319&210&90\\
+		\textbf{Konzentration abfiltrierbare Stoffe}&$\boldsymbol{\left[\si{\gram \per \liter}\right]}$&1,32&0,21&0,09\\
 		\hline
 	\end{tabulary}
 %	}
@@ -172,7 +172,10 @@ m_{\text{oTS,1}}			&= \SI{0,124}{\gram}-(\SI{33,2209}{\gram}-\SI{33,2023}{\gram}
 c_{\text{oTS}} 				&= \frac{m_{\text{oTS}}}{V_{\text{Probe}}}\\[2mm]
 c_{\text{oTS,1}} 			&= \frac{\SI{0,104}{\gram}}{\SI{94}{\milli \liter}}\\
 							&= \SI{0.001106}{\gram\per \milli \liter} \approx \underline{\underline{\SI{1106}{\milli \gram \per \liter}}}\\
-		w_{oTS}&=\frac{}{}
+		w_{oTS}&=\frac{m_{oTS}}{m_{Filterkuchen}}\\
+		w_{oTS,1}&=\frac{m_{oTS,1}}{m_{Filterkuchen}}\\
+				&= \frac{\SI{0,104}{\gram}}{\SI{0,124}{\gram}}\\
+				&\approx\underline{\underline{ \SI{84}{\percent}}}
 \end{flalign}
 
 %Tabelle START
@@ -194,10 +197,10 @@ c_{\text{oTS,1}} 			&= \frac{\SI{0,104}{\gram}}{\SI{94}{\milli \liter}}\\
 		\textbf{Masse Tiegel (leer)} &  $\boldsymbol{\left[\si{\gram}\right]}$ & 33,2023 & 31,0858 & 34,0671\\
 		\textbf{Masse Tiegel (voll)}& $\boldsymbol{\left[\si{\gram}\right]}$	& 33,2209 & 31,1029 & 34,0713\\
 		\hline
-		\textbf{Masse oTS} & $\boldsymbol{\left[\si{\milli \gram}\right]}$& \SI{0,104}{\gram} &  & \\
+		\textbf{Masse oTS} & $\boldsymbol{\left[\si{ \gram}\right]}$& 0,104 & 0,106 & 0,118\\
 		\hline
-		\textbf{Konzentration oTS}&$\boldsymbol{\left[\si{\milli \gram \per \liter}\right]}$& 1106 &  &  \\
-		\textbf{Massenanteil oTS an TS} & $\boldsymbol{\left[\%\right]}$&&&\\
+		\textbf{Konzentration oTS}&$\boldsymbol{\left[\si{\milli \gram \per \liter}\right]}$& 1106 & 352 & 1184 \\
+		\textbf{Massenanteil oTS an TS} & $\boldsymbol{\left[\%\right]}$&84&85&95\\
 		\hline
 	\end{tabulary}
 	%	}
