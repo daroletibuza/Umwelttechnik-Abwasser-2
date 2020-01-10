@@ -160,14 +160,19 @@ Beispielrechnung für Probe 1
 \newpage
 
 \section*{organische Trockensubstanz oTS}
-Beispielrechnung für Probe 1
+Beispielrechnung für Probe 1\\
+\textcolor{red}{Berechnung überarbeiten}
 \begin{flalign}
-m_{\text{oTS}}				&= m_{\text{Tiegel+Probe}}-m_{\text{Tiegel}}\\
-m_{\text{oTS,1}}			&= \SI{33,2209}{\gram}-\SI{33,2023}{\gram}\\
-							&= \underline{ \SI{0,0186}{\gram}}\\[8pt]
+m_{Filter,Glüh}	&= m_{Filter+Tiegel}-m_{Tiegel}\\
+				&= \SI{35,7126}{\gram}-\SI{35,714}{\gram}\\
+				&=\underline{ \SI{0,0014}{\gram}}\\[8pt]
+m_{\text{oTS}}				&= m_{Filterkuchen}-(m_{\text{Tiegel+Probe}}-m_{\text{Tiegel}})-m_{Filter,Glüh}\\
+m_{\text{oTS,1}}			&= \SI{0,124}{\gram}-(\SI{33,2209}{\gram}-\SI{33,2023}{\gram})-\SI{0,0014}{\gram}\\
+							&= \underline{ \SI{0,104}{\gram}}\\[8pt]
 c_{\text{oTS}} 				&= \frac{m_{\text{oTS}}}{V_{\text{Probe}}}\\[2mm]
-c_{\text{oTS,1}} 			&= \frac{\SI{0,0186}{\gram}}{\SI{94}{\milli \liter}}\\
-							&= \SI{0.000198}{\gram\per \milli \liter} \approx \underline{\underline{\SI{198}{\milli \gram \per \liter}}}
+c_{\text{oTS,1}} 			&= \frac{\SI{0,104}{\gram}}{\SI{94}{\milli \liter}}\\
+							&= \SI{0.001106}{\gram\per \milli \liter} \approx \underline{\underline{\SI{1106}{\milli \gram \per \liter}}}\\
+		w_{oTS}&=\frac{}{}
 \end{flalign}
 
 %Tabelle START
@@ -185,12 +190,14 @@ c_{\text{oTS,1}} 			&= \frac{\SI{0,0186}{\gram}}{\SI{94}{\milli \liter}}\\
 		& \textbf{Maßeinheit}&	\textbf{Probe 1} & \textbf{Probe 2} & \textbf{Probe 3}  \\ 
 		\hline
 		\textbf{Probenvolumen}& $\boldsymbol{\left[\si{\milli \liter}\right]}$ & 94 	& 300 	& 100\\
+		\textbf{Masser Filter (verglüht)} & $\boldsymbol{\left[\si{\milli \gram}\right]}$ & \SI{0,0014}{\gram}&\SI{0,0014}{\gram}&\SI{0,0014}{\gram}\\
 		\textbf{Masse Tiegel (leer)} &  $\boldsymbol{\left[\si{\gram}\right]}$ & 33,2023 & 31,0858 & 34,0671\\
 		\textbf{Masse Tiegel (voll)}& $\boldsymbol{\left[\si{\gram}\right]}$	& 33,2209 & 31,1029 & 34,0713\\
 		\hline
-		\textbf{Masse oTS} & $\boldsymbol{\left[\si{\milli \gram}\right]}$& 18,6 & 17,1 & 4,2\\
+		\textbf{Masse oTS} & $\boldsymbol{\left[\si{\milli \gram}\right]}$& \SI{0,104}{\gram} &  & \\
 		\hline
-		\textbf{Konzentration oTS}&$\boldsymbol{\left[\si{\milli \gram \per \liter}\right]}$& 198 & 57 & 42 \\
+		\textbf{Konzentration oTS}&$\boldsymbol{\left[\si{\milli \gram \per \liter}\right]}$& 1106 &  &  \\
+		\textbf{Massenanteil oTS an TS} & $\boldsymbol{\left[\%\right]}$&&&\\
 		\hline
 	\end{tabulary}
 	%	}
